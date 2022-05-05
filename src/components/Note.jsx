@@ -1,7 +1,18 @@
-import React from 'react'
+import React from "react";
+import DeleteIcon from "@mui/icons-material/Delete";
 
-export const Note = () => {
+export const Note = ({ id, title, content, onDelete }) => {
+  const onClickDelete = () => {
+    onDelete(id);
+  };
+
   return (
-    <div>Note</div>
-  )
-}
+    <div className="note">
+      <h2>{title}</h2>
+      <p>{content}</p>
+      <button onClick={onClickDelete}>
+        <DeleteIcon />
+      </button>
+    </div>
+  );
+};

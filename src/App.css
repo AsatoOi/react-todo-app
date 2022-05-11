@@ -1,6 +1,5 @@
-/* herder-style */
 header {
-  background-color: #260ca4;
+  background-color: #0ab063;
   margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.3);
@@ -14,7 +13,6 @@ header h1 div {
   padding-left: 8px;
 }
 
-/* create-area-style */
 form.create-note {
   position: relative;
   width: 480px;
@@ -22,6 +20,7 @@ form.create-note {
   background-color: #fff;
   padding: 15px;
   border-radius: 7px;
+  border: 2px solid #0ab063;
   box-shadow: 0 2px 5px rgb(138, 137, 137);
 }
 form.create-note input,
@@ -38,7 +37,7 @@ form.create-note button {
   position: absolute;
   right: 18px;
   bottom: -18px;
-  background: #260ca4;
+  background: #0ab063;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -48,11 +47,14 @@ form.create-note button {
   cursor: pointer;
   outline: none;
 }
+form.create-note button:hover {
+  background: #089352;
+}
 
-/* note-style */
 .note {
   background-color: #fff;
   border-radius: 7px;
+  border: 1px solid #0ab063;
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
   width: 240px;
@@ -73,15 +75,15 @@ form.create-note button {
   position: relative;
   float: right;
   margin-right: 10px;
-  color: #260ca4;
+  color: #0ab063;
   border: none;
   width: 36px;
   height: 36px;
   cursor: pointer;
   outline: none;
+  background-color: #fff;
 }
 
-/* footer */
 footer {
   position: absolute;
   text-align: center;
